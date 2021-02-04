@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .tables{
+      display: flex;
+      flex-direction: row;
+    }
+    table{
+      margin-right: 30px;
+      width: 600px;
+      border-right: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    }
+    table tr{
+      border: 1px solid #e9e9e9;
+    }
+    table td{
+      padding: 10px;
+      border-left: 1px solid #e9e9e9;
+      border-bottom: 1px solid #e9e9e9;
+      text-align: center;
+      cursor: pointer;
+    }
+    thead td:not(:first-child){
+      background-color: #999;
+      color: #fff;
+    }
+    h2{
+      margin: 0;
+    }
+    .content{
+      margin-top: 30px;
+      padding: 10px;
+      width: 300px;
+      background-color: #000;
+    }
+    .normal-text{
+      color: #fff;
+    }
+    .gradual-text{
+      background-image: linear-gradient(90deg, #ED4264, #FFEDBC);
+      background-clip: text;
+      font-size: 40px;
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+    .shine-text{
+      font-size: 20px;
+      color : white;	
+      text-shadow: 0 0 10px red,0 0 20px red,0 0 30px red,0 0 40px red;
+    }
+  </style>
+</head>
+
+<body>
+ <div class="tables">
+  <table cellpadding="0" cellspacing="0">
+    <thead>
+      <tr>
+        <td></td>
+        <td>不需要切图</td>
+        <td>需要切图</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">字体</td>
+        <td>常规文字</td>
+        <td>装饰字体</td>
+      </tr>
+      <tr>
+        <td>渐变字体</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td rowspan="3">背景</td>
+        <td>纯色背景</td>
+        <td>非矩形背景</td>
+      </tr>
+      <tr>
+        <td>渐变背景</td>
+        <td>含图形背景</td>
+      </tr>
+      <tr>
+        <td>不规则圆角背景</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td rowspan="3">按钮</td>
+        <td>常规按钮</td>
+        <td>不规则图形按钮</td>
+      </tr>
+      <tr>
+        <td>双色渐变矩形按钮</td>
+        <td>多彩渐变按钮</td>
+      </tr>
+      <tr>
+        <td>带外框文字按钮</td>
+        <td>带不规则阴影按钮</td>
+      </tr>
+      <tr>
+        <td>icon</td>
+        <td></td>
+        <td>常规icon(上传svg至iconfont)</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="box">
+    <h2>字体</h2>
+    <div class="content">
+      <p class="normal-text">我是常规文字</p>
+      <p class="gradual-text">我是渐变字体</p>
+      <p class="shine-text">我是发光字体</p>
+    </div>
+  </div>
+ </div>
+
+</body>
+
+</html>
